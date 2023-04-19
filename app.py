@@ -7,7 +7,7 @@ path="howmanyopen.txt"
 
 @app.route("/")
 def open_page():
-    letezik=os.path.isfile(path)
+    letezik=os.path.isfile(path) 
     if letezik==False:
         f=open(path,"w")
         f.write("0")
